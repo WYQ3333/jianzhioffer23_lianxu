@@ -7,11 +7,16 @@ public:
 	int FindGreatestSumOfSubArray(vector<int> array) {
 		int result = 0;
 		int temp = 0;
-		for (int i = 0; i < array.size(); ++i){
-			temp += array[i];
-			if (temp >= result){
-				result = temp;
+		int i = 0;
+		while (i < array.size()){
+			for (int j = i; j < array.size(); ++j){
+				temp += array[j];
+				if (temp >= result){
+					result = temp;
+				}
 			}
+			temp = 0;
+			++i;
 		}
 		return result;
 	}
