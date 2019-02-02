@@ -23,7 +23,7 @@ public:
 };
 
 void TestFunc(){
-	vector<int> array = { 1, -2, 3, 10, -4, 7, 2, -5 };
+	vector<int> array = { -2, -8, -1, -5, -9 };
 	Solution s;
 	int result = s.FindGreatestSumOfSubArray(array);
 	cout << result << endl;
