@@ -8,6 +8,10 @@ public:
 		int result = 0;
 		int temp = 0;
 		int i = 0;
+		for (i = 0; i < array.size(); ++i){
+			result += array[i];
+		}
+		i = 0;
 		while (i < array.size()){
 			for (int j = i; j < array.size(); ++j){
 				temp += array[j];
